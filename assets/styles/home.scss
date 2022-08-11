@@ -32,6 +32,7 @@ section.fonctionnement {
         align-items: center;
         position: relative;
         transition: .2s;
+        box-shadow: 0px 5px 10px 0px darken($color: $gray, $amount:5%);
 
         div.puce {
             position: absolute;
@@ -47,6 +48,7 @@ section.fonctionnement {
 
         i {
             font-size: 20px;
+            transition: .2s;
         }
 
         p {
@@ -57,6 +59,78 @@ section.fonctionnement {
 
         &:hover {
             background-color: lighten($color: $primary, $amount: 36%);
+
+            i {
+                color:$primary;
+            }
+        }
+    }
+}
+
+section.restaurants {
+    margin-top:60px;
+    background-color: rgb(246, 246, 246);
+    padding: 60px 25px;
+    
+    div.card_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    a {
+        width: 100%;
+        margin-top: 30px;
+        display: block;
+    }
+
+    article.card {
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 5px 10px 0px darken($color: $gray, $amount:5%);
+
+        img {
+            object-fit: cover;
+            width:100%;
+            height: 200px;
+        }
+
+        div.bottom {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+
+        div.left {
+            p:first-child {
+                font-size: 20px;
+                font-weight: 800;
+            }
+            p:last-child {
+                margin-top: 5px;
+                font-size: 18px;
+            }
+        }
+
+        div.right {
+            display: flex;
+            padding-top:5px;
+            i {
+                font-size: 27px;
+                transition: .3s;
+            }
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        a {
+            width:calc(50% - 25px);
+        }
+    }
+    @media screen and (min-width: 1110px) {
+        a {
+            width:calc(25% - 25px);
         }
     }
 }
