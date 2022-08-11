@@ -23,3 +23,18 @@ div.location {
         margin-right: 20px;
     }
 }
+
+@media screen and (min-width: 1110px) {
+    div.logo {
+        padding: 40px;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    div.location {
+        font-size: 30px;
+        padding: 40px 0 30px 0;
+    }
+}
