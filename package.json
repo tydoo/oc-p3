@@ -1,0 +1,24 @@
+{
+  "name": "oc-p3",
+  "version": "1.0.0",
+  "description": "Formation Développeur WEB OpenClassrooms - Projet 3",
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^3.0.0",
+    "autoprefixer": "^10.4.8",
+    "postcss-loader": "^7.0.1",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "webpack-notifier": "^1.15.0"
+  },
+  "author": "BOYER Thomas",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
