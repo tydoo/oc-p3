@@ -5,6 +5,20 @@ div.logo {
     align-items: center;
     padding: 20px 0 15px;
     box-shadow: 0px 0px 8px 0px darken($color: $gray, $amount:30%);
+    position: relative;
+
+    a {
+        position: absolute;
+        left:0;
+        top:0;
+        height: 100%;
+        width: 70px;
+        padding: 10px;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 div.location {
