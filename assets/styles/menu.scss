@@ -77,3 +77,19 @@ section.menu {
         padding: 17px 55px;
     }
 }
+
+@media screen and (min-width: 600px) {
+    img.main_image {
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1110px) {
+    img.main_image {
+        height: 500px;
+    }
+
+    section.menu {
+        border-radius: 45px 45px;
+        margin-bottom: 70px;
+    }
+}
