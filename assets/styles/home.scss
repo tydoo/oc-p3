@@ -114,15 +114,6 @@ section.restaurants {
             }
         }
 
-        div.right {
-            display: flex;
-            padding-top:5px;
-            i {
-                font-size: 27px;
-                transition: .3s;
-            }
-        }
-
         &:hover {
             box-shadow: 0px 10px 10px 0px darken($color: $gray, $amount:15%);
         }

@@ -1,0 +1,21 @@
+span.heart {
+    display: block;
+    text-align: right;
+    margin-right: 5px;
+
+    &::before {
+        content:"\f004";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 400;
+        font-size: 27px;
+        color:back;
+        transition: .3s;
+        background-clip: text;
+        background-image: linear-gradient(to bottom right,$secondary, $primary);
+    }
+    
+    &:hover::before {
+        font-weight: 600;
+        color: transparent;
+    }
+}
