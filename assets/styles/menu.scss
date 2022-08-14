@@ -26,6 +26,20 @@ section.menu {
 
     article.submenu {
         margin-top: 35px;
+        animation: showallplats 1s forwards;
+        opacity:0;
+
+        &:nth-child(2) {
+            animation-delay: .3s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: .5s;
+        }
+
+        &:nth-child(4) {
+            animation-delay: .7s;
+        }
     }
 
     p.subtitle {
@@ -54,6 +68,8 @@ section.menu {
         position: relative;
         cursor: pointer;
         padding-left:15px;
+        
+        
 
         div.left {
             flex-grow: 1;
@@ -107,7 +123,7 @@ section.menu {
                 margin-right: 0;
 
                 i {
-                    animation: round360 .3s ease .05s;
+                    animation: round360 .3s ease .05s forwards;
                 }
             }
         }
@@ -129,6 +145,18 @@ section.menu {
     }
 }
 
+@keyframes showallplats {
+    from {
+        margin-top: 50px;
+        opacity:0;
+    }
+
+    to {
+        margin-top: 35px;
+        opacity:1;
+    }
+}
+
 @media screen and (min-width: $breakpoint-sm) {
     img.main_image {
         height: 400px;
@@ -141,6 +169,6 @@ section.menu {
 
     section.menu {
         border-radius: 45px 45px;
-        margin-bottom: 70px;
+        margin:-60px 30px 70px 30px;
     }
 }
