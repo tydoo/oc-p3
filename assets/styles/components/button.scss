@@ -16,7 +16,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: $breakpoint-lg) {
     button {
         font-size: 30px;
         padding: 30px 40px;

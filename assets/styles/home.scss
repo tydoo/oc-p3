@@ -120,12 +120,12 @@ section.restaurants {
         }
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $breakpoint-sm) {
         a {
             width:calc(50% - 25px);
         }
     }
-    @media screen and (min-width: 1110px) {
+    @media screen and (min-width: $breakpoint-lg) {
         a {
             width:calc(25% - 25px);
         }
