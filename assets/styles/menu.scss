@@ -46,28 +46,70 @@ section.menu {
         background-color: white;
         border-radius: 15px;
         margin-top: 15px;
-        padding: 13px 15px 10px 15px;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: stretch;
         box-shadow: 0px 5px 10px 0px darken($color: $gray, $amount:5%);
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        padding-left:15px;
 
         div.left {
+            flex-grow: 1;
+            padding: 13px 0 10px 0;
             p:first-child {
                 font-size: 20px;
                 font-weight: 600;
+                text-overflow:ellipsis;
+                white-space: nowrap;
             }
-
+            
             p:last-child {
+                text-overflow:ellipsis;
+                white-space: nowrap;
                 font-size: 17px;
                 margin-top: 5px;
             }
         }
 
         div.right {
-            font-size: 17px;
-            font-weight: 600;
-            margin-right: 10px;
+            display: flex;
+            align-items: stretch;
+
+            p {
+                font-size: 17px;
+                font-weight: 600;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom:10px;
+            }
+
+            div.check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $tertiary;
+                position: relative;
+                width: 70px;
+                font-size: 25px;
+                color: white;
+                font-weight: 600;
+                transition: .3s;
+                margin:0 -70px 0 20px;
+                font-size: 28px;
+                color: white;
+            }
+        }
+
+        &:hover {
+            div.right div.check {
+                margin-right: 0;
+
+                i {
+                    animation: round360 .3s ease .05s;
+                }
+            }
         }
     }
 
@@ -75,6 +117,15 @@ section.menu {
         margin: 50px auto;
         display: block;
         padding: 17px 55px;
+    }
+}
+
+@keyframes round360 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
