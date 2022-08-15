@@ -64,28 +64,27 @@ section.menu {
         justify-content: space-between;
         align-items: stretch;
         box-shadow: 0px 5px 10px 0px darken($color: $gray, $amount:5%);
-        overflow: hidden;
         position: relative;
         cursor: pointer;
         padding-left:15px;
+        overflow: hidden;
         
-        
-
         div.left {
-            flex-grow: 1;
             padding: 13px 0 10px 0;
+            white-space: nowrap;
+            overflow: hidden;
             p:first-child {
                 font-size: 20px;
                 font-weight: 600;
-                text-overflow:ellipsis;
-                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
             
             p:last-child {
-                text-overflow:ellipsis;
-                white-space: nowrap;
                 font-size: 17px;
                 margin-top: 5px;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
         }
 
